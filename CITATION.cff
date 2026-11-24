@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "calcul-materiaux-travaux-fr: Moteur de calcul et jeu de données de référence matériaux travaux (NF / DTU 2026)"
+message: "Si vous utilisez ce jeu de données ou ces formules de calcul dans une étude, un outil ou un article technique, merci de citer ce dépôt."
+type: software
+version: "2026.1.0"
+date-released: "2026-11-24"
+license: MIT
+url: "https://calculmateriaux.com"
+repository-code: "https://github.com/calculmateriaux/calcul-materiaux-travaux-fr"
+authors:
+  - name: "CalculMatériaux"
+    email: "support@calculmateriaux.com"
+    website: "https://calculmateriaux.com"
+keywords:
+  - beton
+  - dosage-beton
+  - granulats
+  - parpaing
+  - carrelage
+  - peinture
+  - pente-toit
+  - dtu
+  - nf-en-206
+  - open-data
+  - france

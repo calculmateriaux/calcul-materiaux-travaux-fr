@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "materiaux-dosages-fr-2026",
+  "updated_at": "2026-11-24",
+  "jurisdiction": ["FR", "BE", "CH", "CA"],
+  "units": {
+    "length": "m",
+    "thickness": "cm",
+    "area": "m2",
+    "volume": "m3",
+    "mass": "kg",
+    "density": "kg/m3",
+    "liquid": "L",
+    "slope": "%"
+  },
+  "reference_calculator": "https://calculmateriaux.com",
+  "license": "CC-BY-4.0",
+  "sources": [
+    {
+      "code": "NF EN 206/CN",
+      "title": "Béton — Spécification, performance, production et conformité (complément national français)",
+      "scope": "Dosages de chantier courants (250 à 400 kg/m³)"
+    },
+    {
+      "code": "NF DTU 13.1 / NF DTU 13.3",
+      "title": "Fondations superficielles et dallages (épaisseurs minimales, enrobage, dosage)",
+      "scope": "Fondations 300 kg/m³, dallages piétons 12 cm et carrossables 15 cm à 350 kg/m³"
+    },
+    {
+      "code": "NF DTU 26.2",
+      "title": "Chapes et dalles à base de liants hydrauliques",
+      "scope": "Chape mortier sans gravier 300 à 350 kg/m³, sable 0/4 mm (1 500 kg/m³)"
+    },
+    {
+      "code": "NF EN 771-3 & NF DTU 20.1",
+      "title": "Blocs en béton de granulats (parpaings) et ouvrages en maçonnerie",
+      "scope": "Format normalisé 20 × 50 cm (10 blocs/m²), mortier 20 kg/m², blocs à bancher 100 L/m²"
+    },
+    {
+      "code": "NF DTU 52.2",
+      "title": "Pose collée des revêtements céramiques et assimilés",
+      "scope": "Marges de découpe (+10 % droite / +15 % diagonale), consommations de colle C2 et joints"
+    },
+    {
+      "code": "UNPG / Carrières FR",
+      "title": "Masses volumiques apparentes usuelles des granulats de construction",
+      "scope": "Gravier roulé 1 500 kg/m³, concassé 1 600 kg/m³, sable 0/4 1 500 kg/m³, tout-venant 1 700 kg/m³"
+    },
+    {
+      "code": "NF DTU 59.1",
+      "title": "Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Rendement usuel 10 m²/L, 2 couches, déductions ouvertures standards"
+    },
+    {
+      "code": "NF DTU 40.35 / 40.21 / 40.22 / 40.11 / 40.14",
+      "title": "Couvertures (bac acier, tuiles mécaniques, tuiles canal, ardoises, bardeaux bitumés)",
+      "scope": "Pentes minimales absolues et courantes par matériau de couverture"
+    }
+  ],
+  "beton": {
+    "dosages_par_m3": [
+      {
+        "dosage_kg_m3": 250,
+        "usage": "Béton de propreté / calage",
+        "sacs_ciment_35kg": 8,
+        "sacs_ciment_25kg": 10,
+        "sable_0_4_kg": 850,
+        "sable_0_4_m3": 0.567,
+        "gravier_4_20_kg": 1130,
+        "gravier_4_20_m3": 0.706,
+        "melange_beton_kg": 1920,
+        "eau_l": 125
+      },
+      {
+        "dosage_kg_m3": 300,
+        "usage": "Fondations / semelles filantes",
+        "sacs_ciment_35kg": 9,
+        "sacs_ciment_25kg": 12,
+        "sable_0_4_kg": 830,
+        "sable_0_4_m3": 0.553,
+        "gravier_4_20_kg": 1100,
+        "gravier_4_20_m3": 0.688,
+        "melange_beton_kg": 1880,
+        "eau_l": 150
+      },
+      {
+        "dosage_kg_m3": 350,
+        "usage": "Dalle armée, terrasse, linteau",
+        "sacs_ciment_35kg": 10,
+        "sacs_ciment_25kg": 14,
+        "sable_0_4_kg": 800,
+        "sable_0_4_m3": 0.533,
+        "gravier_4_20_kg": 1080,
+        "gravier_4_20_m3": 0.675,
+        "melange_beton_kg": 1850,
+        "eau_l": 175
+      },
+      {
+        "dosage_kg_m3": 400,
+        "usage": "Poteaux, allée carrossable forte charge",
+        "sacs_ciment_35kg": 12,
+        "sacs_ciment_25kg": 16,
+        "sable_0_4_kg": 760,
+        "sable_0_4_m3": 0.507,
+        "gravier_4_20_kg": 1050,
+        "gravier_4_20_m3": 0.656,
+        "melange_beton_kg": 1800,
+        "eau_l": 195
+      }
+    ],
+    "predose_en_sacs": [
+      {
+        "sac_poids_kg": 35,
+        "rendement_l_par_sac": 17,
+        "sacs_par_m3": 59,
+        "eau_l_par_sac": 3.5,
+        "poids_sec_par_m3_kg": 2065
+      },
+      {
+        "sac_poids_kg": 25,
+        "rendement_l_par_sac": 12.5,
+        "sacs_par_m3": 80,
+        "eau_l_par_sac": 2.5,
+        "poids_sec_par_m3_kg": 2000
+      }
+    ],
+    "chape_mortier_par_m3": {
+      "sable_0_4_kg": 1500,
+      "eau_l": 175,
+      "dosage_recommande_kg_m3": [300, 350]
+    }
+  },
+  "granulats": {
+    "materiaux": [
+      {
+        "id": "gravier_roule",
+        "label": "Gravier roulé décoratif (8/16)",
+        "densite_kg_m3": 1500,
+        "densite_t_m3": 1.5,
+        "sacs_25kg_par_m3": 60,
+        "big_bag_1t_volume_m3": 0.667,
+        "big_bag_1_5t_volume_m3": 1.0,
+        "couverture_m2_ep_5cm_par_big_bag_1t": 13.3,
+        "couverture_m2_ep_5cm_par_big_bag_1_5t": 20.0
+      },
+      {
+        "id": "gravier_concasse",
+        "label": "Gravier concassé allée (6/14 ou 10/14)",
+        "densite_kg_m3": 1600,
+        "densite_t_m3": 1.6,
+        "sacs_25kg_par_m3": 64,
+        "big_bag_1t_volume_m3": 0.625,
+        "big_bag_1_5t_volume_m3": 0.938,
+        "couverture_m2_ep_5cm_par_big_bag_1t": 12.5,
+        "couverture_m2_ep_5cm_par_big_bag_1_5t": 18.8
+      },
+      {
+        "id": "sable",
+        "label": "Sable de carrière / pose pavés (0/4)",
+        "densite_kg_m3": 1500,
+        "densite_t_m3": 1.5,
+        "sacs_25kg_par_m3": 60,
+        "big_bag_1t_volume_m3": 0.667,
+        "big_bag_1_5t_volume_m3": 1.0,
+        "couverture_m2_ep_5cm_par_big_bag_1t": 13.3,
+        "couverture_m2_ep_5cm_par_big_bag_1_5t": 20.0
+      },
+      {
+        "id": "tout_venant",
+        "label": "Tout-venant / GNT 0/20 ou 0/31,5 (sous-couche)",
+        "densite_kg_m3": 1700,
+        "densite_t_m3": 1.7,
+        "sacs_25kg_par_m3": 68,
+        "big_bag_1t_volume_m3": 0.588,
+        "big_bag_1_5t_volume_m3": 0.882,
+        "couverture_m2_ep_5cm_par_big_bag_1t": 11.8,
+        "couverture_m2_ep_5cm_par_big_bag_1_5t": 17.6
+      }
+    ],
+    "big_bag_formats_kg": [500, 1000, 1500],
+    "dalle_stabilisatrice_surface_m2": 0.96,
+    "dalle_stabilisatrice_dimensions_cm": "120x80"
+  },
+  "parpaings": {
+    "blocs_par_m2": 10,
+    "mortier_sec_kg_par_m2": 20,
+    "ciment_montage_kg_par_m2": 3.5,
+    "sable_montage_kg_par_m2": 14,
+    "beton_remplissage_bancher_l_par_m2": 100,
+    "marges_recommandees_pct": {
+      "mur_droit": 5,
+      "pignon_triangulaire": 10
+    },
+    "types": [
+      {
+        "id": "creux20",
+        "label": "Parpaing creux 20 × 20 × 50 cm (NF)",
+        "epaisseur_cm": 20,
+        "poids_unitaire_kg": 19,
+        "blocs_par_palette": 50,
+        "est_bancher": false
+      },
+      {
+        "id": "creux15",
+        "label": "Parpaing creux 15 × 20 × 50 cm (NF)",
+        "epaisseur_cm": 15,
+        "poids_unitaire_kg": 15,
+        "blocs_par_palette": 60,
+        "est_bancher": false
+      },
+      {
+        "id": "creux10",
+        "label": "Parpaing creux 10 × 20 × 50 cm (cloison)",
+        "epaisseur_cm": 10,
+        "poids_unitaire_kg": 11,
+        "blocs_par_palette": 90,
+        "est_bancher": false
+      },
+      {
+        "id": "bancher20",
+        "label": "Parpaing à bancher 20 × 20 × 50 cm",
+        "epaisseur_cm": 20,
+        "poids_unitaire_kg": 21,
+        "blocs_par_palette": 50,
+        "est_bancher": true
+      }
+    ]
+  },
+  "carrelage": {
+    "marges_recommandees_pct": {
+      "pose_droite": 10,
+      "pose_diagonale": 15
+    },
+    "formats": [
+      {
+        "id": "10x20",
+        "largeur_cm": 10,
+        "longueur_cm": 20,
+        "carreaux_par_m2": 50,
+        "surface_boite_m2": 1.0,
+        "colle_sol_kg_m2": 3.5,
+        "joint_3mm_kg_m2": 0.85
+      },
+      {
+        "id": "20x60",
+        "largeur_cm": 20,
+        "longueur_cm": 60,
+        "carreaux_par_m2": 8.33,
+        "surface_boite_m2": 1.2,
+        "colle_sol_kg_m2": 4.5,
+        "joint_3mm_kg_m2": 0.55
+      },
+      {
+        "id": "30x30",
+        "largeur_cm": 30,
+        "longueur_cm": 30,
+        "carreaux_par_m2": 11.11,
+        "surface_boite_m2": 1.44,
+        "colle_sol_kg_m2": 4.0,
+        "joint_3mm_kg_m2": 0.6
+      },
+      {
+        "id": "30x60",
+        "largeur_cm": 30,
+        "longueur_cm": 60,
+        "carreaux_par_m2": 5.56,
+        "surface_boite_m2": 1.44,
+        "colle_sol_kg_m2": 4.8,
+        "joint_3mm_kg_m2": 0.5
+      },
+      {
+        "id": "45x45",
+        "largeur_cm": 45,
+        "longueur_cm": 45,
+        "carreaux_par_m2": 4.94,
+        "surface_boite_m2": 1.42,
+        "colle_sol_kg_m2": 4.5,
+        "joint_3mm_kg_m2": 0.5
+      },
+      {
+        "id": "60x60",
+        "largeur_cm": 60,
+        "longueur_cm": 60,
+        "carreaux_par_m2": 2.78,
+        "surface_boite_m2": 1.44,
+        "colle_sol_kg_m2": 5.5,
+        "joint_3mm_kg_m2": 0.4
+      }
+    ]
+  },
+  "peinture": {
+    "rendement_standard_m2_par_l": 10,
+    "couches_defaut": 2,
+    "marge_bac_rouleau_pct": 5,
+    "deduction_porte_standard_m2": 1.7,
+    "deduction_fenetre_standard_m2": 1.5,
+    "formats_pots_l": [1, 2.5, 5, 10]
+  },
+  "pente_toiture_dtu": [
+    {
+      "id": "bac_acier",
+      "label": "Bac acier nervuré",
+      "norme_dtu": "NF DTU 40.35",
+      "pente_min_absolue_pct": 5,
+      "pente_courante_pct": 15,
+      "poids_moyen_kg_m2": 6.5
+    },
+    {
+      "id": "polycarbonate",
+      "label": "Plaques polycarbonate (pergola / véranda)",
+      "norme_dtu": "Avis technique fabricant",
+      "pente_min_absolue_pct": 5,
+      "pente_courante_pct": 10,
+      "poids_moyen_kg_m2": 3.2
+    },
+    {
+      "id": "shingle",
+      "label": "Bardeau bitumé / Shingle",
+      "norme_dtu": "NF DTU 40.14",
+      "pente_min_absolue_pct": 20,
+      "pente_courante_pct": 25,
+      "poids_moyen_kg_m2": 11.0
+    },
+    {
+      "id": "ardoise",
+      "label": "Ardoises naturelles / fibres-ciment",
+      "norme_dtu": "NF DTU 40.11",
+      "pente_min_absolue_pct": 20,
+      "pente_courante_pct": 35,
+      "poids_moyen_kg_m2": 28.0
+    },
+    {
+      "id": "tuile_canal",
+      "label": "Tuiles canal (Sud / Méditerranée)",
+      "norme_dtu": "NF DTU 40.22",
+      "pente_min_absolue_pct": 24,
+      "pente_courante_pct": 30,
+      "poids_moyen_kg_m2": 50.0
+    },
+    {
+      "id": "tuile_mecanique",
+      "label": "Tuiles mécaniques à emboîtement",
+      "norme_dtu": "NF DTU 40.21",
+      "pente_min_absolue_pct": 25,
+      "pente_courante_pct": 35,
+      "poids_moyen_kg_m2": 44.0
+    }
+  ]
+}

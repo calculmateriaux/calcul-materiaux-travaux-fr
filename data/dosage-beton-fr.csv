@@ -1,0 +1,5 @@
+dosage_kg_m3,usage,sacs_ciment_35kg_par_m3,sacs_ciment_25kg_par_m3,sable_0_4_kg_par_m3,sable_0_4_m3_par_m3,gravier_4_20_kg_par_m3,gravier_4_20_m3_par_m3,melange_beton_kg_par_m3,eau_l_par_m3
+250,"Béton de propreté / calage",8,10,850,0.567,1130,0.706,1920,125
+300,"Fondations / semelles filantes",9,12,830,0.553,1100,0.688,1880,150
+350,"Dalle armée, terrasse, linteau",10,14,800,0.533,1080,0.675,1850,175
+400,"Poteaux, allée carrossable forte charge",12,16,760,0.507,1050,0.656,1800,195

@@ -1,0 +1,60 @@
+{
+  "name": "calcul-materiaux-travaux-fr",
+  "version": "2026.1.0",
+  "description": "Moteur de calcul et jeu de données de référence (NF / DTU 2026) pour les matériaux travaux en France, Belgique, Suisse et Canada francophone : béton, parpaings, carrelage, gravier, peinture et pente de toit.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./data": "./data/materiaux-dosages-fr-2026.json"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "homepage": "https://calculmateriaux.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calculmateriaux/calcul-materiaux-travaux-fr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calculmateriaux/calcul-materiaux-travaux-fr/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "beton",
+    "dosage-beton",
+    "parpaing",
+    "carrelage",
+    "gravier",
+    "big-bag",
+    "peinture",
+    "pente-toit",
+    "dtu",
+    "nf-en-206",
+    "bricolage",
+    "travaux",
+    "materiaux",
+    "construction",
+    "france",
+    "open-data",
+    "calculator",
+    "concrete",
+    "masonry",
+    "roof-pitch"
+  ]
+}
