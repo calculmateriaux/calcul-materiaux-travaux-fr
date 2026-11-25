@@ -1,0 +1,59 @@
+{
+  "title": "French Construction Materials (NF/DTU 2026) Open Reference Dataset & Calculation Engine (Concrete, Aggregates, Blocks, Tiles, Paint)",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-24",
+  "version": "2026.1.0",
+  "language": "fra",
+  "description": "Structured 2026 open datasets (JSON/CSV) and zero-dependency ESM JavaScript formulas published by CalculMatériaux (calculmateriaux.com) aligned with French NF and DTU construction standards (NF EN 206/CN, NF EN 771-3, NF DTU 13.3, 20.1, 52.2, 59.1) for France, Belgium, Switzerland, and Quebec. Includes concrete mix and bag yields (https://calculmateriaux.com/calcul-beton/), concrete block counts (https://calculmateriaux.com/calcul-parpaing/), aggregate bulk densities, tiling waste margins, and paint coverage.",
+  "creators": [
+    {
+      "name": "CalculMateriaux Maintainers",
+      "type": "Organization",
+      "affiliation": "CalculMatériaux"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "beton",
+    "bricolage",
+    "travaux",
+    "materiaux",
+    "parpaing",
+    "carrelage",
+    "gravier",
+    "pente-toit",
+    "construction",
+    "france",
+    "open-data",
+    "javascript",
+    "calculmateriaux.com",
+    "2026"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://calculmateriaux.com/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://calculmateriaux.com/calcul-beton/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://calculmateriaux.com/calcul-parpaing/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/calculmateriaux/calcul-materiaux-travaux-fr",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
